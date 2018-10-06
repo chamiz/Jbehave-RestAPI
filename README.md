@@ -14,10 +14,10 @@ This project was written using https://api.tmsandbox.co.nz/v1/Categories/6327/De
 |----|----------|--------------------------|-------------------------------------------------|
 |main| Java     | com.example.api          | Contains classes related to response            |
 |main|          | GetRequest Class         | Contains actual methods which calls webservice  |
-|main|          | WebServiceDemo_steps.xml | Sprint file which initiate application context  |
+|main| Resource | WebServiceDemo_steps.xml | Sprint file which initiate application context  |
 |test| Java     | com.exmaple.steps        | Story definition                                |  
 |test|          | WebServiceDemoStories    | Execution class                                 | 
-|main| Resource | com.example.stories      | JBehave story file which describes the test case|
+|test| Resource | com.example.stories      | JBehave story file which describes the test case|
 
 
 
