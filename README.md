@@ -1,7 +1,7 @@
 # JBehave-RESTAPI demo code
 Demo project using JBehave,JUnit,Jersey,Gradle for testing **webservices using JBehave**
 
-This project was written using https://api.tmsandbox.co.nz/v1/Categories/6327/Details.json?catalogue=false URL
+This project was written using https://api.tmsandbox.co.nz/v1/Categories/6327/Details.json?catalogue=false URI
 
 **Prerequisites**
 1. Java 8 
@@ -9,6 +9,9 @@ This project was written using https://api.tmsandbox.co.nz/v1/Categories/6327/De
 3. InteliJ IDEA , Eclipse
 
 **Package Structure**
+
+|----|----------|--------------------------|-------------------------------------------------|
+
 |main| Java     | com.example.api          | Contains classes related to response            |
 |main|          | GetRequest Class         | Contains actual methods which calls webservice  |
 |main|          | WebServiceDemo_steps.xml | Sprint file which initiate application context  |
@@ -24,6 +27,7 @@ gradle idea (for IDEA IDE) or
 gradle eclipse (for Eclipse IDE)
 
 **Build Project**
+
 gradle clean build or use your IDE
 
 **Test Execution**
