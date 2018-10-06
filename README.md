@@ -6,7 +6,7 @@ This project was written using https://api.tmsandbox.co.nz/v1/Categories/6327/De
 **Prerequisites**
 1. Java 8 
 2. Gradle latest
-3. InteliJ IDEA , Eclipse
+3. InteliJ IDEA / Eclipse IDE
 
 **Package Structure**
 
