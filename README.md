@@ -10,21 +10,22 @@ This project was written using https://api.tmsandbox.co.nz/v1/Categories/6327/De
 
 **Package Structure**
 
+|    |          |Package/Class name       | Description                                     |
 |----|----------|--------------------------|-------------------------------------------------|
-
 |main| Java     | com.example.api          | Contains classes related to response            |
 |main|          | GetRequest Class         | Contains actual methods which calls webservice  |
 |main|          | WebServiceDemo_steps.xml | Sprint file which initiate application context  |
-|----|----------|--------------------------|-------------------------------------------------|
 |test| Java     | com.exmaple.steps        | Story definition                                |  
 |test|          | WebServiceDemoStories    | Execution class                                 | 
 |main| Resource | com.example.stories      | JBehave story file which describes the test case|
+
 
 
 If you need to **import project** files to your IDE please run commands
 
 gradle idea (for IDEA IDE) or
 gradle eclipse (for Eclipse IDE)
+
 
 **Build Project**
 
@@ -39,6 +40,8 @@ Right click on WebServiceDemoStories and run as JUnit test.
 Execute command "gradle test"
 
 If you need further clarifications or enhancement requests on this project please contact me via email.
+
+Cheers
 
 Chamila Ambahera
 chamila.ambahera@gmail.com
