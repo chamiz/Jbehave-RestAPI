@@ -37,11 +37,13 @@ public class GetRequest {
      */
 
     public static void sendRequest() {
-        exampleClass = new Example();
-        exampleClass =  client
-                .target(REST_URI)
-                .request(MediaType.APPLICATION_JSON)
-                .get(Example.class);
+        if (exampleClass == null) {
+            exampleClass = new Example();
+            exampleClass = client
+                    .target(REST_URI)
+                    .request(MediaType.APPLICATION_JSON)
+                    .get(Example.class);
+        }
     }
 
     /**
@@ -61,7 +63,7 @@ public class GetRequest {
      * @param canReList canReList
      */
 
-    public static void validateCanRelist(String canReList){
+    public static void validateCanReList(String canReList){
         System.out.println("CanReList ::: " + exampleClass.getCanRelist());
         Assert.assertEquals("CanReList validation failed" , Boolean.valueOf(canReList) , exampleClass.getCanRelist());
     }

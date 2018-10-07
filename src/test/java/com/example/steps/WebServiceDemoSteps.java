@@ -29,16 +29,11 @@ public class WebServiceDemoSteps {
 
     @Then("Validate CanReList : $canReList")
     public void validateCanReList(String canReList){
-        GetRequest.validateCanRelist(canReList);
+        GetRequest.validateCanReList(canReList);
     }
 
     @Then("validate Promotion Name : $name and Description : $description")
     public void validatePromotion(String name , String description){
         GetRequest.validatePromotions(name, description);
     }
-
-
-
-
-    
 }
