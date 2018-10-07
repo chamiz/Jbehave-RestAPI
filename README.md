@@ -10,7 +10,7 @@ This project was written using https://api.tmsandbox.co.nz/v1/Categories/6327/De
 
 **Package Structure**
 
-|    |          |Package/Class name       | Description                                     |
+|    |          |Package/Class name       | Description                                      |
 |----|----------|--------------------------|-------------------------------------------------|
 |main| Java     | com.example.api          | Contains classes related to response            |
 |main|          | GetRequest Class         | Contains actual methods which calls webservice  |
@@ -18,6 +18,8 @@ This project was written using https://api.tmsandbox.co.nz/v1/Categories/6327/De
 |test| Java     | com.exmaple.steps        | Story definition                                |  
 |test|          | WebServiceDemoStories    | Execution class                                 | 
 |test| Resource | com.example.stories      | JBehave story file which describes the test case|
+|    |          |.travis.yml               | Travis CI config file                           |
+|    |          | build.gradle             | Gradle build file                               |
 
 
 
@@ -38,6 +40,19 @@ Right click on WebServiceDemoStories and run as JUnit test.
 
 2. Using Gradle
 Execute command "gradle test"
+
+**View Test Execution Reports**
+
+1. Gradle report
+    Navigate to build\reports\tests\test and open index.html file using any web browser or double click to open using default web browser.
+2. JBehave report
+    Navigate to build\classes\jbehave and open com.example.stories.webServiceDemo.html file using any web browser or double click to open using default web browser. 
+
+**CI support**
+
+This project has enabled Travis CI support using travis-ci.org. Report
+https://travis-ci.org/chamiz/Jbehave-RestAPI
+
 
 If you need further clarifications or enhancement requests on this project please contact me via email.
 
